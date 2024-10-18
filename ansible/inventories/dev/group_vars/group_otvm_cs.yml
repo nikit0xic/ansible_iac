@@ -1,0 +1,5 @@
+file_syncs:
+  - src_path: "{{ lookup('env', 'CI_PROJECT_DIR') }}/subtags/"
+    dest_path: "/opt/cs/appData/webreports/subtags"
+  - src_path: "{{ lookup('env', 'CI_PROJECT_DIR') }}/patches/"
+    dest_path: "/opt/cs/patch"

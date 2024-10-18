@@ -1,0 +1,6 @@
+---
+- name: sync dirs files
+  ansible.posix.synchronize:
+    src: "{{ item.src_path }}"
+    dest: "{{ item.dest_path }}"
+  loop: "{{ file_syncs }}"

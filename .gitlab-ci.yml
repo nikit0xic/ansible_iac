@@ -1,0 +1,20 @@
+include:
+  - component: gitlab.registry.com/iac/ci-components/main/ci@~latest #if you had something
+
+stages:
+  - deploy
+
+ansible_deploy:
+  before_script:
+    - apk add --no-cache rsync
+  extends: .ansible.Playbook
+  stage: deploy
+  variables:
+    INVENTORY: "./ansible/inventories/dev"
+    PLAYBOOK: "./ansible/playbook.yml"
+    ANSIBLE_IMAGE_VERSION: "v1.1.14"
+    AUTHORISATION: "ssh"
+  tags:
+#    - your-runner-tag
+  only:
+    - master

@@ -1,0 +1,9 @@
+file_syncs:
+  - src_path: "/Users/username/PycharmProjects/projectname/subtags/"
+    dest_path: "/opt/cs/appData/webreports/subtags"
+  - src_path: "/Users/username/PycharmProjects/projectname/subtags/"
+    dest_path: "/opt/cs/patch"
+  - src_path: "/Users/username/PycharmProjects/projectname/subtags/"
+    dest_path: "/opt/cs2/appData/webreports/subtags"
+  - src_path: "/Users/username/PycharmProjects/projectname/subtags/"
+    dest_path: "/opt/cs2/patch"

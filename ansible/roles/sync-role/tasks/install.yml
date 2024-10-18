@@ -1,0 +1,5 @@
+---
+- name: Install rsync on RHEL VM
+  ansible.builtin.yum:
+    name: rsync
+    state: present

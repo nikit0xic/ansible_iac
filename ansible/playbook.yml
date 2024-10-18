@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: ansible_iac
+  become: true
+  roles:
+    - sync-role
